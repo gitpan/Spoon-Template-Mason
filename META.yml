@@ -1,0 +1,15 @@
+--- #YAML:1.0
+name: Spoon-Template-Mason
+version: 0.01
+license: perl
+distribution_type: module
+requires:
+  Spoon: 0.12
+recommends: {}
+build_requires: {}
+conflicts: {}
+provides:
+  Spoon::Template::Mason:
+    file: lib/Spoon/Template/Mason.pm
+    version: 0.01
+generated_by: Module::Build version 0.20

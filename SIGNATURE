@@ -1,0 +1,33 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.38.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 e984de5d304f963db1a62f101aba6ace87d4b307 Build.PL
+SHA1 2f13f1335254d76d1df0009855ba49b036909551 Changes
+SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
+SHA1 6494f54306c3863fd2a490f2cc4fe552bb59665f MANIFEST
+SHA1 8b9cbd0e68d11d00531f63077a8296b13123f6e1 MANIFEST.SKIP
+SHA1 8d8332fe6496e1ea6d4f0f9dcfea124cad0966e5 META.yml
+SHA1 1849b2e69cd3bf568e221f73cf6e91ebae6489c0 Makefile.PL
+SHA1 ec8e632c30516a925323b922433550c47c6d4123 README
+SHA1 e8c14065838d4db8bf37e98e244cd0141c3755a6 lib/Spoon/Template/Mason.pm
+SHA1 cccaf885419c2b9791a4311424002ccf8ef5dccd t/01-load.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.4 (GNU/Linux)
+
+iD8DBQFAiKwv+4tbS/niBUoRAqb/AJ0X+uIKY6NnNyPmFixC4lLP3b5jzwCggrN7
+qJIq/a2TCa9AcQF1Z0pUDEo=
+=Pg1l
+-----END PGP SIGNATURE-----
