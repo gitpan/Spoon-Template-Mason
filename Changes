@@ -1,3 +1,9 @@
+0.03  2007-07-04
+
+- The Spoon::Template->get_include_path method is now simply path, and
+this broke the render method.
+
+
 0.02  2004-04-25
 
 - Added SIGNATURE to MANIFEST.
