@@ -1,3 +1,10 @@
+0.04  2007-07-05
+
+- Remove a debugging warn statements left in the code.
+
+- Add a dependency on HTML::Mason.
+
+
 0.03  2007-07-04
 
 - The Spoon::Template->get_include_path method is now simply path, and

@@ -9,7 +9,7 @@ use HTML::Mason::Interp;
 
 use vars qw ($VERSION);
 
-$VERSION = 0.03;
+$VERSION = 0.04;
 
 field 'interp';
 
@@ -45,7 +45,7 @@ sub _make_interp
     my $root_name = 'root001';
     my $path = $self->path;
     my @roots = map { [ $root_name++ => Cwd::abs_path($_) ] } ref $path ? @$path : $path;
-    use Data::Dumper; warn Dumper \@roots;
+
     my $interp =
         HTML::Mason::Interp->new
             ( comp_root => \@roots,
