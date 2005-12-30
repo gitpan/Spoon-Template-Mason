@@ -9,5 +9,6 @@ META.yml
 README
 SIGNATURE
 t/01-load.t
+t/02-render.t
 
 SIGNATURE    Added here by Module::Build

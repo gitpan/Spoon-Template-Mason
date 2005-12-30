@@ -2,6 +2,7 @@ package Spoon::Template::Mason;
 
 use strict;
 use warnings;
+use Spoon 0.23;
 use Spoon::Template '-base';
 
 use Cwd ();
@@ -9,27 +10,19 @@ use HTML::Mason::Interp;
 
 use vars qw ($VERSION);
 
-$VERSION = 0.04;
+$VERSION = 0.05;
 
-field 'interp';
-
-sub init
-{
-    my $self = shift;
-    $self->use_class('config');
-}
+field 'interp' =>
+      -init => '$self->_make_interp';
 
 sub render
 {
-    my $self   = shift;
-    my $comp   = shift;
-    my $params = shift if ref $_[0];
+    my $self = shift;
+    my $comp = shift;
 
     $comp = "/$comp" unless $comp =~ m{^/};
 
-    $self->_make_interp($params) unless $self->interp;
-
-    my $output;
+    my $output = '';
     $self->interp->out_method(\$output);
     $self->interp->exec( $comp, $self->all, @_ );
 
